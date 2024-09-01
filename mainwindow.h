@@ -23,7 +23,7 @@ public slots:
     void SlotSwitchReg();       // 槽，接收信号并执行
 
 private:
-    Ui::MainWindow *ui;
+    Ui::MainWindow * ui;
     loglogindialog * _login_dig;
     registerdialog * _reg_dlg;
 };

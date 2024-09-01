@@ -30,7 +30,7 @@ private:
     Ui::loglogindialog *ui;
 
 signals:
-    void switchRegister();      // 信号不需要实现，定义在发送放
+    void switchRegister();      // 信号不需要实现，定义在发送方
 };
 
 #endif // LOGLOGINDIALOG_H

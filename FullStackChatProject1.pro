@@ -1,4 +1,4 @@
-QT       += core gui
+QT       += core gui network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -10,14 +10,20 @@ CONFIG += c++17
 
 SOURCES += \
     build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/loglogindialog.cpp \
+    global.cpp \
+    httpmgr.cpp \
     main.cpp \
     mainwindow.cpp \
-    registerdialog.cpp
+    registerdialog.cpp \
+    singleton.cpp
 
 HEADERS += \
     build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/loglogindialog.h \
+    global.h \
+    httpmgr.h \
     mainwindow.h \
-    registerdialog.h
+    registerdialog.h \
+    singleton.h
 
 FORMS += \
     build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/loglogindialog.ui \

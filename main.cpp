@@ -1,11 +1,12 @@
 #include "mainwindow.h"
 #include <QApplication>
 #include <QFile>
+#include <QString>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    QFile qss("/style/stylesheet.qss");
+    QFile qss(":/style/stylesheet.qss");
     if(qss.open(QFile::ReadOnly)){
         qDebug("open success");
         QString style = qss.readAll();
